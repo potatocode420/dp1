@@ -1,0 +1,46 @@
+Date/Location: 25-Aug-2015 at 15:30 in EN310
+Information Updates/Reminders
+=============================
+* The next two weeks are going to be about understanding the
+legacy Battleship code base so that we can plan for the work to
+fix and improve it.
+* Everyone should be able to use git, github wiki’s and Trello.
+Ask for help if that’s a problem.
+* We’ll be using toggl.com to keep track of time.
+* The Programming Help Desk (Room E620) is available to help us with
+programming for this unit.
+Decisions Needed
+================
+* None (only general items requiring Actions this week)
+General Items
+=============
+* Everyone needs to download the old code and make sure they can
+run it.
+* Need a Trello board created for this project and team. Actions
+and other details will be posted there. Columns used need to be
+decided. Someone needs to create and invite other team members.
+* Need a Toggl team project to track the time the team uses.
+Someone needs to create and invite team members (using email
+addresses). We need to decide what activities to track.
+* Need a github account for this project. (Project from last task
+can be used if suitable.) Existing code base can be added.
+* Need github wiki pages to document project details.
+* Need to find and list functional issues. What works the way it
+should and what does not? Put on wiki.
+* Need a list of all the files, and what each file is for
+(description). Decide where this is stored. Put in wiki
+* Are some files (code or resources) not being used or not needed?
+Create a list and share on wiki.
+* What tools we can use to convert VB code to C# code? Someone (or
+several) people should investigate and report back next meeting so
+we can decide and then do the work of converting.
+* What coding standards should we used for the project? Need
+someone (or several) people to investigate and report back at the
+next meeting so that we can decide.
+* Are there any obvious TODO, BUG or FIXME comments in the code
+base that we should know about? Someone should check and report.
+* How much of the code has been documented, and once converted
+what needs to be done. Someone should investigate and report.
+* A list should be created to keep track of extensions ideas and
+new features that could be added (not bugs to fix). The work
+should not be done at this stage.
