@@ -1,4 +1,4 @@
-Naming Convention
+Coding Standard
 •	Class names and method names use PascalCasing
 •	Method arguments and local variables use camelCasing
 •	Hungarian notation and SCREAMING CAPS should not be used
