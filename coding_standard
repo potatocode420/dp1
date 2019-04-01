@@ -1,0 +1,14 @@
+Naming Convention
+•	Class names and method names use PascalCasing
+•	Method arguments and local variables use camelCasing
+•	Hungarian notation and SCREAMING CAPS should not be used
+•	Abbreviations should be avoided unless commonly used (such as ID,XML,FTP, etc)
+•	Abbreviations that are 3 characters or more should use PascalCasing
+•	Avoid underscores unless it is to prefix static variables with underscore (_customerId)
+•	Class names should be nouns 
+•	Source files should be named according to their main classes
+•	Namespaces should be organised with a clear structure
+•	Curly braces can either be in the same line OR vertically aligned throughout the code, as long as it is consistent
+•	Static variables should be at the very top of the class, with all member variables below it
+•	Singular names should be used for enumerations
+•	Enumeration names should not have any suffixes or prefixes
