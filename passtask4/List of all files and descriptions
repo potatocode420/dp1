@@ -1,0 +1,48 @@
+All these files can be found in the battleships file downloaded from blackboard:
+
+  bin file contains:
+    nothing 
+    
+  lib file contains:
+    1. godly file
+    2. mac file
+    3. sdl13 file
+    4. win file
+    5. cygpath file
+    6. Swingame.dll (application extension)
+    7. Swingame.dll (Microsoft access database)
+
+  Resources file contains:
+    1. animations file
+    2. bundles file
+    3. fonts file
+    4. images file
+    5. panels file
+    6. sounds file
+    7. highscores file (text document, contains all the highscores made by players playing the game)
+    8. SwinGame.icns (ICNS File)
+    9. SwinGame (Icon file)
+
+  Src file contains:
+    1. Model file
+    2. DeploymentController.vb (VB file)
+    3. DiscoveryController.vb (VB file)
+    4. EndingGameController.vb (VB file)
+    5. GameController.vb (VB file)
+    6. GameLogic.vb (VB file)
+    7. GameResources.vb (VB file)
+    8. GameState.vb (VB file)
+    9. HighScoreController.vb (VB file)
+    10. MenuController.vb (VB file)
+    11. UtilityFUnctions (VB file)
+    
+   tmp file contains:
+    nothing
+    
+   .gitignore file (it is used to tell git to ignore which files to avoid commiting transient files)
+   build.sh (used to trigger build process)
+   clean.sh (used to trigger clean process)
+   contributors (text document- contains the names of contributors who created the battleship game)
+   out (text document- shows the IDE used and version used and also where the save file is)
+   README ( Contains the instruction needed to run the battleship game)
+   run.sh (used to trigger run process)
