@@ -13,28 +13,28 @@ All these files can be found in the battleships file downloaded from blackboard:
     7. Swingame.dll (Microsoft access database)
 
   Resources file contains:
-    1. animations file
-    2. bundles file
-    3. fonts file
-    4. images file
-    5. panels file
-    6. sounds file
+    1. animations file (contains the animation required for the battleship game)
+    2. bundles file (contains the bundles file needed to load the game like splash animation for startup and images)
+    3. fonts file (contains the fonts used by the battleship game)
+    4. images file (contains the images used by battleship game)
+    5. panels file (contains the panels used by battleship game)
+    6. sounds file (contains the sounds used by battleship game)
     7. highscores file (text document, contains all the highscores made by players playing the game)
     8. SwinGame.icns (ICNS File)
     9. SwinGame (Icon file)
 
   Src file contains:
-    1. Model file
-    2. DeploymentController.vb (VB file)
-    3. DiscoveryController.vb (VB file)
-    4. EndingGameController.vb (VB file)
-    5. GameController.vb (VB file)
-    6. GameLogic.vb (VB file)
-    7. GameResources.vb (VB file)
-    8. GameState.vb (VB file)
-    9. HighScoreController.vb (VB file)
-    10. MenuController.vb (VB file)
-    11. UtilityFUnctions (VB file)
+    1. Model file (contains VB files created in visual basic language to create models used by battleship game)
+    2. DeploymentController.vb (VB file - project item file created in Visual Basic language)
+    3. DiscoveryController.vb (VB file - project item file created in Visual Basic language)
+    4. EndingGameController.vb (VB file - project item file created in Visual Basic language)
+    5. GameController.vb (VB file - project item file created in Visual Basic language)
+    6. GameLogic.vb (VB file - project item file created in Visual Basic language)
+    7. GameResources.vb (VB file - project item file created in Visual Basic language)
+    8. GameState.vb (VB file - project item file created in Visual Basic language)
+    9. HighScoreController.vb (VB file - project item file created in Visual Basic language)
+    10. MenuController.vb (VB file - project item file created in Visual Basic language)
+    11. UtilityFUnctions (VB file - project item file created in Visual Basic language)
     
    tmp file contains:
     nothing
