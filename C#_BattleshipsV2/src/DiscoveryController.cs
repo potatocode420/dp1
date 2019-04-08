@@ -11,6 +11,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualBasic;
 using SwinGameSDK;
+using static HighScoreController;
+using static MenuController;
+using static DeploymentController;
+using static DiscoveryController;
+using static UtilityFunctions;
+using static EndingGameController;
+using static GameController;
+using static GameResources;
 
 /// <summary>
 
@@ -30,7 +38,7 @@ static class DiscoveryController
 	public static void HandleDiscoveryInput()
 	{
 		if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE))
-			AddNewState(GameState.ViewingGameMenu);
+			GameController.AddNewState(GameState.ViewingGameMenu);
 
 		if (SwinGame.MouseClicked(MouseButton.LeftButton))
 			DoAttack();

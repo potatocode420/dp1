@@ -3,3 +3,5 @@ C:\Users\Marc\Desktop\battleships\dp1\C#_Battleships\Battleships\Battleships\src
 C:\Users\Marc\Desktop\battleships\dp1\C#_Battleships\Battleships\Battleships\src\obj\x86\Debug\Battleships.csproj.CoreCompileInputs.cache
 C:\Users\Teradon\Desktop\Semester 3\battleships\battleships\dp1\C#_Battleships\src\obj\x86\Debug\Battleships.csprojResolveAssemblyReference.cache
 C:\Users\Teradon\Desktop\Semester 3\battleships\battleships\dp1\C#_BattleshipsV2\src\obj\x86\Debug\Battleships.csprojResolveAssemblyReference.cache
+D:\Development Tools\dp1\C#_BattleshipsV2\src\obj\x86\Debug\Battleships.csprojAssemblyReference.cache
+D:\Development Tools\dp1\C#_BattleshipsV2\src\obj\x86\Debug\Battleships.csproj.CoreCompileInputs.cache
