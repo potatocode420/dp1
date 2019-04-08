@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{91D7E5A9-150F-4A89-B57C-9A2015458FD7}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Player.cs">
+    <Files>
+      <File FileName="DeploymentController.cs" Line="120" Column="12" />
+      <File FileName="GameController.cs" Line="230" Column="48" />
+      <File FileName="UtilityFunctions.cs" Line="352" Column="11" />
+      <File FileName="AIHardPlayer.cs" Line="20" Column="19" />
+      <File FileName="Player.cs" Line="189" Column="44" />
+      <File FileName="AIPlayer.cs" Line="161" Column="1" />
+      <File FileName="AIMediumPlayer.cs" Line="10" Column="17" />
+      <File FileName="AIOption.cs" Line="1" Column="1" />
+      <File FileName="AttackResult.cs" Line="16" Column="19" />
+      <File FileName="BattleShipsGame.cs" Line="19" Column="19" />
+      <File FileName="Direction.cs" Line="1" Column="1" />
+      <File FileName="DiscoveryController.cs" Line="78" Column="66" />
+      <File FileName="EndingGameController.cs" Line="36" Column="12" />
+      <File FileName="GameLogic.cs" Line="12" Column="3" />
+      <File FileName="GameResources.cs" Line="275" Column="6" />
+      <File FileName="GameState.cs" Line="1" Column="1" />
+      <File FileName="HighScoreController.cs" Line="154" Column="22" />
+      <File FileName="ISeaGrid.cs" Line="17" Column="19" />
+      <File FileName="MenuController.cs" Line="271" Column="9" />
+      <File FileName="ResultOfAttack.cs" Line="1" Column="1" />
+      <File FileName="SeaGrid.cs" Line="28" Column="44" />
+      <File FileName="Tile.cs" Line="17" Column="19" />
+      <File FileName="SeaGridAdapter.cs" Line="54" Column="31" />
+      <File FileName="Ship.cs" Line="21" Column="19" />
+      <File FileName="ShipName.cs" Line="1" Column="1" />
+      <File FileName="TileView.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\..\..\..\..\..\..\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" Line="1097" Column="24" />
+      <File FileName="packages.config" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Battleships PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
