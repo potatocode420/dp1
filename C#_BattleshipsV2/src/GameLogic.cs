@@ -1,4 +1,12 @@
 ﻿using SwinGameSDK;
+using static HighScoreController;
+using static MenuController;
+using static DeploymentController;
+using static DiscoveryController;
+using static UtilityFunctions;
+using static EndingGameController;
+using static GameController;
+using static GameResources;
 
 static class GameLogic
 {
