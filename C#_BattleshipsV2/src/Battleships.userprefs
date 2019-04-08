@@ -4,7 +4,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Player.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MenuController.cs">
     <Files>
       <File FileName="DeploymentController.cs" Line="120" Column="12" />
       <File FileName="GameController.cs" Line="230" Column="48" />
@@ -24,7 +24,7 @@
       <File FileName="GameState.cs" Line="1" Column="1" />
       <File FileName="HighScoreController.cs" Line="154" Column="22" />
       <File FileName="ISeaGrid.cs" Line="17" Column="19" />
-      <File FileName="MenuController.cs" Line="271" Column="9" />
+      <File FileName="MenuController.cs" Line="271" Column="6" />
       <File FileName="ResultOfAttack.cs" Line="1" Column="1" />
       <File FileName="SeaGrid.cs" Line="28" Column="44" />
       <File FileName="Tile.cs" Line="17" Column="19" />
@@ -32,7 +32,7 @@
       <File FileName="Ship.cs" Line="21" Column="19" />
       <File FileName="ShipName.cs" Line="1" Column="1" />
       <File FileName="TileView.cs" Line="1" Column="1" />
-      <File FileName="..\..\..\..\..\..\..\..\..\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" Line="1097" Column="24" />
+      <File FileName="..\..\..\..\..\..\..\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets" Line="1097" Column="24" />
       <File FileName="packages.config" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
