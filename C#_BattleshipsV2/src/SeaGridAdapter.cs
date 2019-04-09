@@ -51,7 +51,7 @@ public class SeaGridAdapter : ISeaGrid
 	{
 		get
 		{
-			TileView result = _MyGrid.Item(x, y);
+			TileView result = _MyGrid.Item;
 
 			if (result == TileView.Ship)
 				return TileView.Sea;
@@ -91,7 +91,7 @@ public class SeaGridAdapter : ISeaGrid
 	{
 		get
 		{
-			return row;
+			return _MyGrid.row;
 		}
 	}
 
@@ -99,9 +99,24 @@ public class SeaGridAdapter : ISeaGrid
 	{
 		get
 		{
-			return col;
+			return _MyGrid.col;
 		}
 	}
+
+	public int x
+	{
+		get
+		{
+			return _MyGrid.x;
+		}
+	}
+
+	public int y
+	{
+		get
+		{
+			return _MyGrid.y;
+		}	}
 
 	/// <summary>
 	///     ''' HitTile calls oppon _MyGrid to hit a tile at the row, col

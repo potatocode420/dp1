@@ -26,6 +26,10 @@ public interface ISeaGrid
 
 	int col { get; }
 
+	int x { get; }
+
+	int y { get; }
+
 	/// <summary>
 	///     ''' Indicates that the grid has changed.
 	///     ''' </summary>
