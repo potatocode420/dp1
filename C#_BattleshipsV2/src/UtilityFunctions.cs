@@ -188,7 +188,7 @@ static class UtilityFunctions
 							else
 								draw = false;
 							break;
-						}
+						}*/
 				}
 
 				if (draw)
