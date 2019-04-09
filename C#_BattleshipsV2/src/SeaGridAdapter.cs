@@ -19,12 +19,14 @@ using SwinGameSDK;
 public class SeaGridAdapter : ISeaGrid
 {
 	private SeaGrid _MyGrid;
+    private int _X;
+    private int _Y;
 
-	/// <summary>
-	///     ''' Create the SeaGridAdapter, with the grid, and it will allow it to be changed
-	///     ''' </summary>
-	///     ''' <param name="grid">the grid that needs to be adapted</param>
-	public SeaGridAdapter(SeaGrid grid)
+    /// <summary>
+    ///     ''' Create the SeaGridAdapter, with the grid, and it will allow it to be changed
+    ///     ''' </summary>
+    ///     ''' <param name="grid">the grid that needs to be adapted</param>
+    public SeaGridAdapter(SeaGrid grid)
 	{
 		_MyGrid = grid;
 		_MyGrid.Changed += new EventHandler(MyGrid_Changed);
@@ -51,7 +53,7 @@ public class SeaGridAdapter : ISeaGrid
 	{
 		get
 		{
-			TileView result = _MyGrid.Item(x, y);
+            TileView result = _MyGrid.Item;
 
 			if (result == TileView.Ship)
 				return TileView.Sea;
@@ -103,13 +105,29 @@ public class SeaGridAdapter : ISeaGrid
 		}
 	}
 
-	/// <summary>
-	///     ''' HitTile calls oppon _MyGrid to hit a tile at the row, col
-	///     ''' </summary>
-	///     ''' <param name="row">the row its hitting at</param>
-	///     ''' <param name="col">the column its hitting at</param>
-	///     ''' <returns>The result from hitting that tile</returns>
-	public AttackResult HitTile(int row, int col)
+    public int x
+    {
+        get
+        {
+            return _X;
+        }
+    }
+
+    public int y
+    {
+        get
+        {
+            return _Y;
+        }
+    }
+
+    /// <summary>
+    ///     ''' HitTile calls oppon _MyGrid to hit a tile at the row, col
+    ///     ''' </summary>
+    ///     ''' <param name="row">the row its hitting at</param>
+    ///     ''' <param name="col">the column its hitting at</param>
+    ///     ''' <returns>The result from hitting that tile</returns>
+    public AttackResult HitTile(int row, int col)
 	{
 		return _MyGrid.HitTile(row, col);
 	}

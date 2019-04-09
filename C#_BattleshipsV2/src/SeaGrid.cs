@@ -26,6 +26,8 @@ public class SeaGrid : ISeaGrid
     private const int _HEIGHT = 10;
 	private int _ROW;
 	private int _COL;
+    private int _X;
+    private int _Y;
 
 	private Tile[,] _GameTiles = new Tile[_WIDTH - 1 + 1, _HEIGHT - 1 + 1];
     private Dictionary<ShipName, Ship> _Ships;
@@ -63,6 +65,22 @@ public class SeaGrid : ISeaGrid
 			return _COL;
 		}
 	}
+
+    public int x
+    {
+        get
+        {
+            return _X;
+        }
+    }
+
+    public int y
+    {
+        get
+        {
+            return _Y;
+        }
+    }
 
     /// <summary>
     /// The height of the sea grid
