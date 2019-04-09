@@ -15,6 +15,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualBasic;
 using SwinGameSDK;
+using static GameResources;
+using static GameController;
+
 
 static class UtilityFunctions
 {
@@ -137,13 +140,20 @@ static class UtilityFunctions
 				Color fillColor;
 				bool draw;
 
+				fillColor = null;
+
 				draw = true;
 
 				switch (grid.Item(row, col))
 				{
 					case TileView.Ship:
                         {
-							draw = false;
+							//draw = false;
+
+							if (small)
+								fillColor = SMALL_SEA;
+							else
+								draw = false;
 							break;
 						}
 
@@ -158,15 +168,20 @@ static class UtilityFunctions
 
 					case TileView.Hit:
                         {
-							if (small)
+							if (small) 
 								fillColor = SMALL_HIT;
 							else
 								fillColor = LARGE_HIT;
 							break;
 						}
 
-					case TileView.Sea:
-                    case TileView.Ship:
+						//Possible bug as there is no implementation in the case TileView.Sea
+					/*case TileView.Sea:
+						{
+							
+						}*/
+                    
+						/*case TileView.Ship: (a duplicate)
                         {
 							if (small)
 								fillColor = SMALL_SEA;
