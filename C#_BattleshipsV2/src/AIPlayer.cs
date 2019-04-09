@@ -134,7 +134,7 @@ public abstract class AIPlayer : Player
 			result = _game.Shoot(row, column);
 			ProcessShot(row, column, result);
 		}
-		while (result.Value != ResultOfAttack.Miss && result.Value != ResultOfAttack.GameOver && !SwinGame.WindowCloseRequested)// generate coordinates for shot// take shot
+		while (result.Value != ResultOfAttack.Miss && result.Value != ResultOfAttack.GameOver && !SwinGame.WindowCloseRequested())// generate coordinates for shot// take shot //uncofirmed bug fixed// 
 ;
 
 		return result;
