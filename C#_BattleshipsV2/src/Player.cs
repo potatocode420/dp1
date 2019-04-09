@@ -16,6 +16,15 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.VisualBasic;
 using SwinGameSDK;
+using static HighScoreController;
+using static MenuController;
+using static DeploymentController;
+using static DiscoveryController;
+using static UtilityFunctions;
+using static EndingGameController;
+using static GameResources;
+using static ShipName;
+using static Ship;
 
 public class Player: IEnumerable<Ship>
 {
@@ -29,6 +38,7 @@ public class Player: IEnumerable<Ship>
 	private int _shots;
 	private int _hits;
 	private int _misses;
+    private ShipName name;
 
 	/// <summary>
 	///     ''' Returns the game that the player is part of.
@@ -93,10 +103,10 @@ public class Player: IEnumerable<Ship>
 	///     ''' </summary>
 	public SeaGrid PlayerGrid
 	{
-		get
-		{
-			return _playerGrid;
-		}
+        get
+        {
+            return _playerGrid;
+        }
 	}
 
 	/// <summary>
@@ -133,7 +143,7 @@ public class Player: IEnumerable<Ship>
 			if (name == ShipName.None)
 				return null/* TODO Change to default(_) if this is not a reference type */;
 
-			return _Ships.Item[name];
+			return _Ships[name];
 		}
 	}
 

@@ -256,5 +256,10 @@ public class SeaGrid : ISeaGrid
 	{
 		return HitTile(row, col);
 	}
+
+    public static implicit operator Dictionary<object, object>(SeaGrid v)
+    {
+        throw new NotImplementedException();
+    }
 }
 
