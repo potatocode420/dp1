@@ -27,7 +27,7 @@ public class SeaGrid : ISeaGrid
 	private int _ROW;
 	private int _COL;
 
-	private Tile[,] _GameTiles = new Tile[Width - 1 + 1, Height - 1 + 1];
+	private Tile[,] _GameTiles = new Tile[_WIDTH - 1 + 1, _HEIGHT - 1 + 1];
     private Dictionary<ShipName, Ship> _Ships;
     private int _ShipsKilled = 0;
     /// <summary>
@@ -170,7 +170,7 @@ public class SeaGrid : ISeaGrid
             int currentCol = col;
             int dRow, dCol;
 
-            if (direction == direction.LeftRight)
+            if (direction == Direction.LeftRight)
             {
                 dRow = 0;
                 dCol = 1;
