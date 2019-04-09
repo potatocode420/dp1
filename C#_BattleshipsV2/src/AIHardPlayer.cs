@@ -218,7 +218,6 @@ public class AIHardPlayer : AIPlayer
 			case ResultOfAttack.ShotAlready:
                 {
 					throw new ApplicationException("Error in AI");
-					break;
 				}
 		}
 
