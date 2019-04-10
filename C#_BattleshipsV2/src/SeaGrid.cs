@@ -94,12 +94,11 @@ public class SeaGrid : ISeaGrid
     /// <param name="x">x coordinate of the tile</param>
     /// <param name="y">y coordiante of the tile</param>
     /// <returns></returns>
-    public TileView Item
+	public TileView Item(int x, int y)
     {
-        get
-        {
+
             return _GameTiles[x, y].View;
-        }
+        
     }
 
     /// <summary>
@@ -249,7 +248,7 @@ public class SeaGrid : ISeaGrid
 
 	TileView ISeaGrid.Item(int row, int col)
 	{
-		return Item;
+		return Item(row,col);
 	}
 
 	AttackResult ISeaGrid.HitTile(int row, int col)
