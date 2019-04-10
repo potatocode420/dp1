@@ -22,10 +22,6 @@ public interface ISeaGrid
 
 	int Height { get; }
 
-	int row { get; }
-
-	int col { get; }
-
 	/// <summary>
 	///     ''' Indicates that the grid has changed.
 	///     ''' </summary>
