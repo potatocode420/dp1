@@ -151,7 +151,6 @@ static class UtilityFunctions
 							fillColor = LARGE_HIT;
 						break;
 					case TileView.Sea:
-					case TileView.Ship:
 						if (small)
 							fillColor = SMALL_SEA;
 						else
