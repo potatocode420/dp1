@@ -1,11 +1,7 @@
-
-using Microsoft.VisualBasic;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics;
 using SwinGameSDK;
+using static UtilityFunctions;
+using static GameController;
+using static GameResources;
 
 /// <summary>
 /// The menu controller handles the drawing and user interactions

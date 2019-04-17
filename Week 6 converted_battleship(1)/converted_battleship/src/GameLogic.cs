@@ -1,10 +1,6 @@
-
-using Microsoft.VisualBasic;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics;
+using static GameController;
+using static GameResources;
+using SwinGameSDK;
 static class GameLogic
 {
 	public static void Main()

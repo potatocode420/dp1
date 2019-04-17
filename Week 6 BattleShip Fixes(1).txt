@@ -22,54 +22,12 @@ where errors like
 	./src/GameResources.cs(271,16): error CS1525: Unexpected symbol `in'
 	./src/GameResources.cs(271,32): error CS1525: Unexpected symbol `)', expecting `;' or `}'
 
-fix "foreach" issues (type must be specificed in the (), remove line above each) as needed
-So,
-		Font obj = default(Font);
-		foreach ( obj in _Fonts.Values) {
-becomes
-		foreach (Font obj in _Fonts.Values) {
-
-
-where you see errors like
-	./src/DeploymentController.cs(6,14): error CS0234: The type or namespace name `Data' does not exist in the namespace `System'. Are you missing `System.Data' assembly reference?
-remove "using System.Data;" from all files
-
-
-Where you see this error, fix the GameController constructure by
-	./src/GameController.cs(54,9): error CS0710: `GameController': Static classes cannot have instance constructors
-Change (line 54)
-	public GameController()
-to
-	static GameController()
-
-
-Where you find errors like
-  ./src/UtilityFunctions.cs(27,26): error CS0246: The type or namespace name `Color' could not be found. Are you missing `SwinGameSDK' using directive?
-add "using SwinGameSDK;"
-
-
 For errors like
 	./src/DeploymentController.cs(50,33): error CS0117: `SwinGameSDK.KeyCode' does not contain a definition for `VK_ESCAPE'
 You'll need to replace with the appropriate keycode (find replace, such as)
 	- replace .VK_ with .vk_
 	- replace .vk_R for vk_r
 	- replace .vk_C for vk_c
-
-For errors like
-	./src/DeploymentController.cs(51,4): error CS0103: The name `AddNewState' does not exist in the current context
-
-Add static using clause to give access to other controller's functions (where needed)
-- i.e. Needed in DeploymentController, DiscoveryController, EndingGameController (controllers ...), UtilityFunctions, GameLogic
-  (Don't add a "using" reference for the current class/file - a self reference makes no sense!)
-using static GameController;
-using static UtilityFunctions;
-using static GameResources;
-using static DeploymentController;
-using static DiscoveryController;
-using static EndingGameController;
-using static MenuController;
-using static HighScoreController;
-
 
 For "Conversion" errors like
 	./src/DeploymentController.cs(182,8): error CS0103: The name `Conversion' does not exist in the current context
@@ -114,6 +72,7 @@ NOTE: There WILL be SOME WARNINGS still. You can fix these, but it will (should)
 
 ==fixed already applied==
 
+===Eddie===
 Remove explicit interface from change events (ie ISeaGrid.Changed becomes Changed) as needed (two cases)
 
 In
@@ -169,3 +128,36 @@ In UtilityFunctions.cs,
 
 Fix broken == operator code for AIPlayer Location (infinite recursion bug)
 - use ReferenceEquals() to avoid == overloaded operator recursion
+
+where you see errors like
+	./src/DeploymentController.cs(6,14): error CS0234: The type or namespace name `Data' does not exist in the namespace `System'. Are you missing `System.Data' assembly reference?
+remove "using System.Data;" from all files
+===
+
+===Marc===
+Change (line 54)
+	public GameController()
+to
+	static GameController()
+
+  ./src/UtilityFunctions.cs(27,26): error CS0246: The type or namespace name `Color' could not be found. Are you missing `SwinGameSDK' using directive?
+add "using SwinGameSDK;"
+
+Add static using clause to give access to other controller's functions (where needed)
+- i.e. Needed in DeploymentController, DiscoveryController, EndingGameController (controllers ...), UtilityFunctions, GameLogic
+  (Don't add a "using" reference for the current class/file - a self reference makes no sense!)
+using static GameController;
+using static UtilityFunctions;
+using static GameResources;
+using static DeploymentController;
+using static DiscoveryController;
+using static EndingGameController;
+using static MenuController;
+using static HighScoreController;
+
+fix "foreach" issues (type must be specificed in the (), remove line above each) as needed
+So,
+		Font obj = default(Font);
+		foreach ( obj in _Fonts.Values) {
+becomes
+		foreach (Font obj in _Fonts.Values) {

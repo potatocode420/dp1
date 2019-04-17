@@ -1,11 +1,12 @@
 
-using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Data;
 using System.Diagnostics;
 using SwinGameSDK;
+using static GameController;
+using static UtilityFunctions;
+using static GameResources;
 
 /// <summary>
 /// The DeploymentController controls the players actions
@@ -83,15 +84,15 @@ static class DeploymentController
 		}
 	}
 
-	/// <summary>
-	/// The user has clicked somewhere on the screen, check if its is a deployment and deploy
-	/// the current ship if that is the case.
-	/// </summary>
-	/// <remarks>
-	/// If the click is in the grid it deploys to the selected location
-	/// with the indicated direction
-	/// </remarks>
-	private static void DoDeployClick()
+    /// <summary>
+    /// The user has clicked somewhere on the screen, check if its is a deployment and deploy
+    /// the current ship if that is the case.
+    /// </summary>
+    /// <remarks>
+    /// If the click is in the grid it deploys to the selected location
+    /// with the indicated direction
+    /// </remarks>
+    private static void DoDeployClick()
 	{
 		Point2D mouse = default(Point2D);
 

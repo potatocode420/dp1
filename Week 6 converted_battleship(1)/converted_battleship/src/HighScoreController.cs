@@ -1,12 +1,10 @@
-
-using Microsoft.VisualBasic;
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Data;
-using System.Diagnostics;
 using System.IO;
 using SwinGameSDK;
+using static UtilityFunctions;
+using static GameController;
+using static GameResources;
 
 /// <summary>
 /// Controls displaying and collecting high score data.
