@@ -4,20 +4,20 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\DeploymentController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\UtilityFunctions.cs">
     <Files>
       <File FileName="src\Model\AIPlayer.cs" Line="4" Column="26" />
       <File FileName="src\Model\AIHardPlayer.cs" Line="5" Column="34" />
       <File FileName="src\Model\AIMediumPlayer.cs" Line="5" Column="34" />
-      <File FileName="src\GameController.cs" Line="5" Column="29" />
-      <File FileName="src\UtilityFunctions.cs" Line="5" Column="14" />
-      <File FileName="src\DeploymentController.cs" Line="19" Column="38" />
-      <File FileName="src\DiscoveryController.cs" Line="5" Column="28" />
-      <File FileName="src\EndingGameController.cs" Line="5" Column="29" />
-      <File FileName="src\GameLogic.cs" Line="5" Column="2" />
+      <File FileName="src\GameController.cs" Line="4" Column="1" />
+      <File FileName="src\UtilityFunctions.cs" Line="3" Column="1" />
+      <File FileName="src\DeploymentController.cs" Line="118" Column="15" />
+      <File FileName="src\DiscoveryController.cs" Line="21" Column="4" />
+      <File FileName="src\EndingGameController.cs" Line="2" Column="1" />
+      <File FileName="src\GameLogic.cs" Line="1" Column="1" />
       <File FileName="src\GameResources.cs" Line="5" Column="2" />
-      <File FileName="src\HighScoreController.cs" Line="5" Column="31" />
-      <File FileName="src\MenuController.cs" Line="5" Column="1" />
+      <File FileName="src\HighScoreController.cs" Line="5" Column="1" />
+      <File FileName="src\MenuController.cs" Line="2" Column="1" />
       <File FileName="src\GameState.cs" Line="5" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>

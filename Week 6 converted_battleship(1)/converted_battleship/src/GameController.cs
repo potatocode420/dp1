@@ -1,13 +1,7 @@
 using System;
 using System.Collections.Generic;
 using SwinGameSDK;
-using static HighScoreController;
-using static MenuController;
-using static DeploymentController;
-using static DiscoveryController;
-using static UtilityFunctions;
-using static EndingGameController;
-using static GameResources;
+
 
 /// <summary>
 /// The GameController is responsible for controlling the game,

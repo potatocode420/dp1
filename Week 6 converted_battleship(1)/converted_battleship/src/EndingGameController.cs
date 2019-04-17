@@ -1,8 +1,5 @@
 using SwinGameSDK;
-using static HighScoreController;
-using static UtilityFunctions;
-using static GameResources;
-using static GameController;
+
 
 /// <summary>
 /// The EndingGameController is responsible for managing the interactions at the end

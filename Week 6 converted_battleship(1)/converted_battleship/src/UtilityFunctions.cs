@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using SwinGameSDK;
-using static GameController;
-using static GameResources;
+
 /// <summary>
 /// This includes a number of utility methods for
 /// drawing and interacting with the Mouse.

@@ -1,5 +1,4 @@
-using static GameController;
-using static GameResources;
+
 using SwinGameSDK;
 static class GameLogic
 {

@@ -1,8 +1,6 @@
 using System;
 using SwinGameSDK;
-using static UtilityFunctions;
-using static GameController;
-using static GameResources;
+
 
 /// <summary>
 /// The battle phase is handled by the DiscoveryController.
