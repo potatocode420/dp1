@@ -12,6 +12,7 @@ using System.Diagnostics;
 
 public enum GameState
 {
+	ControllingSound,
 	/// <summary>
 	/// The player is viewing the main menu.
 	/// </summary>

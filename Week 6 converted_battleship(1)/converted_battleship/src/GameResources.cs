@@ -22,6 +22,8 @@ public static class GameResources
 		//Deployment
 		NewImage("LeftRightButton", "deploy_dir_button_horiz.png");
 		NewImage("UpDownButton", "deploy_dir_button_vert.png");
+		NewImage("SoundOn", "mute_button_unmuted.png");
+		NewImage("SoundOff", "mute_button_muted.png");
 		NewImage("SelectedShip", "deploy_button_hl.png");
 		NewImage("PlayButton", "deploy_play_button.png");
 		NewImage("RandomButton", "deploy_randomize_button.png");
@@ -53,6 +55,7 @@ public static class GameResources
 	private static void LoadMusic()
 	{
 		NewMusic("Background", "horrordrone.mp3");
+        NewMusic ("Troll", "troll.mp3");
 	}
 
 	/// <summary>
@@ -283,7 +286,7 @@ public static class GameResources
 	private static void FreeMusic()
 	{
 		foreach (Music obj in _Music.Values) {
-			Audio.FreeMusic(obj);
+			Audio.FreeMusic (obj);
 		}
 	}
 

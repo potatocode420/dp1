@@ -373,6 +373,18 @@ public static class GameController
 		_aiSetting = setting;
 	}
 
+	public static bool GameSoundControl (bool gameSound)
+	{
+		if (gameSound == false) {
+			SwinGame.CloseAudio ();
+			Music.Stop ();
+			return false;
+		} else {
+			SwinGame.OpenAudio ();
+			SwinGame.PlayMusic(GameResources.GameMusic("Troll"));
+			return true;
+		}
+	}
 }
 
 //=======================================================

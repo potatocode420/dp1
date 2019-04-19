@@ -138,6 +138,7 @@ static class MenuController
 		//SwinGame.DrawText("Main Menu", Color.White, GameFont("ArialLarge"), 50, 50)
 
 		DrawButtons(MAIN_MENU);
+		DeploymentController.DeploySounds ();
 	}
 
 	/// <summary>
@@ -149,6 +150,7 @@ static class MenuController
 		//SwinGame.DrawText("Paused", Color.White, GameFont("ArialLarge"), 50, 50)
 
 		DrawButtons(GAME_MENU);
+		DeploymentController.DeploySounds ();
 	}
 
 	/// <summary>
@@ -164,6 +166,7 @@ static class MenuController
 
 		DrawButtons(MAIN_MENU);
 		DrawButtons(SETUP_MENU, 1, 1);
+		DeploymentController.DeploySounds ();
 	}
 
 	/// <summary>
