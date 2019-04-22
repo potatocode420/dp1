@@ -376,12 +376,12 @@ public static class GameController
 	public static bool GameSoundControl (bool gameSound)
 	{
 		if (gameSound == false) {
+			SwinGame.SetMusicVolume (0);
 			SwinGame.CloseAudio ();
-			Music.Stop ();
 			return false;
 		} else {
+			SwinGame.SetMusicVolume (100);
 			SwinGame.OpenAudio ();
-			SwinGame.PlayMusic(GameResources.GameMusic("Troll"));
 			return true;
 		}
 	}

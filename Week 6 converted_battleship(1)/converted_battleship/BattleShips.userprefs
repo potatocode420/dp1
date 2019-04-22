@@ -11,7 +11,7 @@
       <File FileName="src\GameState.cs" Line="24" Column="14" />
       <File FileName="src\GameLogic.cs" Line="15" Column="37" />
       <File FileName="src\GameResources.cs" Line="17" Column="15" />
-      <File FileName="src\GameController.cs" Line="384" Column="57" />
+      <File FileName="src\GameController.cs" Line="379" Column="27" />
       <File FileName="src\DeploymentController.cs" Line="186" Column="49" />
       <File FileName="src\HighScoreController.cs" Line="18" Column="15" />
       <File FileName="src\UtilityFunctions.cs" Line="305" Column="13" />
@@ -22,20 +22,6 @@
       <File FileName="src\Model\ISeaGrid.cs" Line="1" Column="1" />
       <File FileName="src\Model\Player.cs" Line="141" Column="9" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BattleShips" expanded="True">
-            <Node name="BattleShips" expanded="True">
-              <Node name="src" expanded="True">
-                <Node name="Model" expanded="True" />
-                <Node name="GameController.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BattleShips PreferredExecutionTarget="MonoDevelop.Default" />

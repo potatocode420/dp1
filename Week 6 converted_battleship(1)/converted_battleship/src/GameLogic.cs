@@ -9,7 +9,7 @@ static class GameLogic
 
 		//Load Resources
 		GameResources.LoadResources();
-
+		SwinGame.PlayMusic (GameResources.GameMusic ("Troll"));
 		//Game Loop
 		do {
 			GameController.HandleUserInput();
