@@ -132,6 +132,15 @@ public class Ship
 		_col = col;
 		_direction = direction;
 	}
+
+	public void Reset()
+	{
+		_hitsTaken = 0;
+
+		foreach (Tile tile in _tiles) 
+		{
+			tile.Shot = false;
+		}	}
 }
 
 //=======================================================

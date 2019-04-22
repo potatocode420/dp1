@@ -112,6 +112,12 @@
     <WinLibraryFiles Include="lib\win\smpeg.dll" />
     <WinLibraryFiles Include="lib\win\swingame.rc" />
     <WinLibraryFiles Include="lib\win\zlib1.dll" />
+    <None Include="Resources\images\reset.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Resources\images\newResetBut.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Target Name="CopyFiles">
     <Copy SourceFiles="@(MacLibraryFiles)" DestinationFolder="$(OutDir)" />

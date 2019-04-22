@@ -8,6 +8,11 @@ using SwinGameSDK;
 static class DiscoveryController
 {
 
+	private const int RESET_BUTTON_LEFT = 340;
+	private const int RESET_BUTTON_TOP = 80;
+	private const int RESET_BUTTON_WIDTH = 40;
+	private const int RESET_BUTTON_HEIGHT = 40;
+
 	/// <summary>
 	/// Handles input during the discovery phase of the game.
 	/// </summary>
@@ -17,13 +22,22 @@ static class DiscoveryController
 	/// </remarks>
 	public static void HandleDiscoveryInput()
 	{
+		Point2D newMouse = SwinGame.MousePosition();
 		if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
 			GameController.AddNewState(GameState.ViewingGameMenu);
 		}
 
 		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
 			DoAttack();
-		}
+		} 
+
+		if (SwinGame.MouseClicked (MouseButton.LeftButton)){
+			if ((UtilityFunctions.IsMouseInRectangle (RESET_BUTTON_LEFT, RESET_BUTTON_TOP, RESET_BUTTON_WIDTH, RESET_BUTTON_HEIGHT))) 
+			{
+				GameController.ComputerPlayer.Reset ();
+				GameController.HumanPlayer.Reset ();
+			}
+        }
 	}
 
 	/// <summary>
@@ -72,6 +86,8 @@ static class DiscoveryController
 		SwinGame.DrawText(GameController.HumanPlayer.Missed.ToString(), Color.White, GameResources.GameFont("Menu"), SCORES_LEFT, SPLASH_TOP);
 
 		DeploymentController.DeploySounds ();
+
+		SwinGame.DrawBitmap (GameResources.GameImage ("Reset_Button"), RESET_BUTTON_LEFT, RESET_BUTTON_TOP);
 	}
 
 

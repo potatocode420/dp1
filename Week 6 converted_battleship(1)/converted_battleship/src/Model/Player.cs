@@ -232,6 +232,20 @@ public class Player : IEnumerable<Ship>
 			} while (!placementSuccessful);
 		}
 	}
+
+	public virtual void Reset() 
+	{
+		_hits = 0;
+		_misses = 0;
+		_shots = 0;
+		_playerGrid.Reset ();
+
+		foreach (KeyValuePair<ShipName, Ship> ship in _Ships) 
+		{
+			ship.Value.Reset();
+		}
+
+		}
 }
 
 //=======================================================
