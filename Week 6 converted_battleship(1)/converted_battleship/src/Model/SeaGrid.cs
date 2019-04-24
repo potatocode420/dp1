@@ -205,16 +205,17 @@ public class SeaGrid : ISeaGrid
 		int y;
 		_ShipsKilled = 0;
 
-		foreach (KeyValuePair<ShipName, Ship> ship in _Ships) 
-		{
-			ship.Value.Reset ();
-		}
 		for (x = 0; (x<=(Width - 1)); x++) 
 		{
 			for (y = 0; (y<= (Height - 1)); y++) 
 			{
 				_GameTiles [x, y].Shot = false;
 			}
+		}
+
+		foreach (KeyValuePair<ShipName, Ship> ship in _Ships) 
+		{
+			ship.Value.Reset ();
 		}	}
 }
 

@@ -36,6 +36,7 @@ static class DiscoveryController
 			{
 				GameController.ComputerPlayer.Reset ();
 				GameController.HumanPlayer.Reset ();
+				GameController.ComputerPlayer.RandomizeDeployment ();
 			}
         }
 	}

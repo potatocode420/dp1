@@ -233,7 +233,7 @@ public class Player : IEnumerable<Ship>
 		}
 	}
 
-	public virtual void Reset() 
+	public void Reset() 
 	{
 		_hits = 0;
 		_misses = 0;
