@@ -4,38 +4,25 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="src\GameController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="src\Model\AttackResult.cs">
     <Files>
       <File FileName="src\Model\AIPlayer.cs" Line="4" Column="26" />
       <File FileName="src\Model\AIMediumPlayer.cs" Line="5" Column="34" />
       <File FileName="src\GameState.cs" Line="24" Column="14" />
       <File FileName="src\GameLogic.cs" Line="15" Column="37" />
       <File FileName="src\GameResources.cs" Line="17" Column="15" />
-      <File FileName="src\GameController.cs" Line="384" Column="57" />
+      <File FileName="src\GameController.cs" Line="384" Column="35" />
       <File FileName="src\DeploymentController.cs" Line="186" Column="49" />
       <File FileName="src\HighScoreController.cs" Line="18" Column="15" />
       <File FileName="src\UtilityFunctions.cs" Line="305" Column="13" />
       <File FileName="src\MenuController.cs" Line="171" Column="2" />
       <File FileName="src\DiscoveryController.cs" Line="74" Column="40" />
       <File FileName="src\EndingGameController.cs" Line="26" Column="24" />
-      <File FileName="src\Model\SeaGrid.cs" Line="110" Column="38" />
+      <File FileName="src\Model\AttackResult.cs" Line="11" Column="14" />
+      <File FileName="src\Model\SeaGrid.cs" Line="175" Column="12" />
       <File FileName="src\Model\ISeaGrid.cs" Line="1" Column="1" />
       <File FileName="src\Model\Player.cs" Line="141" Column="9" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="BattleShips" expanded="True">
-            <Node name="BattleShips" expanded="True">
-              <Node name="src" expanded="True">
-                <Node name="Model" expanded="True" />
-                <Node name="GameController.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.BattleShips PreferredExecutionTarget="MonoDevelop.Default" />
