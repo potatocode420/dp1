@@ -163,11 +163,14 @@ static class HighScoreController
 	{
 		const int ENTRY_TOP = 500;
 
-		if (_Scores.Count == 0)
-			LoadScores();
+        if (_Scores.Count == 0)
+        {
+            LoadScores();
+        }
+			
 
 		//is it a high score
-		if (value > _Scores[_Scores.Count - 1].Value) {
+		if ((value > _Scores[_Scores.Count - 1].Value)) {
 			Score s = new Score();
 			s.Value = value;
 
@@ -183,7 +186,7 @@ static class HighScoreController
 				SwinGame.ProcessEvents();
 
 				UtilityFunctions.DrawBackground();
-				DrawHighScores();
+				HighScoreController.DrawHighScores();
 				SwinGame.DrawText("Name: ", Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, ENTRY_TOP);
 				SwinGame.RefreshScreen();
 			}
@@ -197,6 +200,8 @@ static class HighScoreController
 			_Scores.RemoveAt(_Scores.Count - 1);
 			_Scores.Add(s);
 			_Scores.Sort();
+
+            SaveScores();
 
 			GameController.EndCurrentState();
 		}
