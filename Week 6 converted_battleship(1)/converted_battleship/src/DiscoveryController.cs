@@ -69,9 +69,9 @@ static class DiscoveryController
 	public static void DrawDiscovery()
 	{
 		const int SCORES_LEFT = 172;
-		const int SHOTS_TOP = 157;
-		const int HITS_TOP = 206;
-		const int SPLASH_TOP = 256;
+		const int SHOTS_TOP = 153;
+		const int HITS_TOP = 202;
+		const int SPLASH_TOP = 252;
 
 		if ((SwinGame.KeyDown(KeyCode.vk_LSHIFT) | SwinGame.KeyDown(KeyCode.vk_RSHIFT)) & SwinGame.KeyDown(KeyCode.vk_c)) {
 			UtilityFunctions.DrawField(GameController.HumanPlayer.EnemyGrid, GameController.ComputerPlayer, true);
