@@ -24,7 +24,7 @@ public static class GameResources
 		NewImage("UpDownButton", "deploy_dir_button_vert.png");
 		NewImage("SoundOn", "mute_button_unmuted.png");
 		NewImage("SoundOff", "mute_button_muted.png");
-		NewImage("SelectedShip", "deploy_button_hl.png");
+		NewImage("SelectedShip", "deploy_button_hl_purple.png");
 		NewImage("PlayButton", "deploy_play_button.png");
 		NewImage("RandomButton", "deploy_randomize_button.png");
         
