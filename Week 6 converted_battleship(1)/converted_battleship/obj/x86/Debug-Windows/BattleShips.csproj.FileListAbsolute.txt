@@ -123,3 +123,15 @@ D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\obj
 D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\newResetBut.png
 D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\reset.png
 D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\Thumbs.db
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\fonts\Atarian.ttf
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\hori-1.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\hori-2.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\hori-3.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\hori-4.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\hori-5.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\vert-1.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\vert-2.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\vert-3.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\vert-4.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\vert-5.png
+D:\Development Tools\dp1\Week 6 converted_battleship(1)\converted_battleship\bin\Debug\Resources\images\deploy_button_hl_purple.png
