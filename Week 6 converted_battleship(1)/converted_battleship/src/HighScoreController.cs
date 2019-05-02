@@ -112,7 +112,6 @@ static class HighScoreController
 	/// </summary>
 	public static void DrawHighScores()
 	{
-		string SCORE_TYPE = '';
 		const int SCORES_HEADING = 40;
 		const int SCORES_TOP = 80;
 		const int SCORE_GAP = 30;
