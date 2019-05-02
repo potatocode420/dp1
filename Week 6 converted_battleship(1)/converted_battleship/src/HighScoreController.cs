@@ -112,6 +112,7 @@ static class HighScoreController
 	/// </summary>
 	public static void DrawHighScores()
 	{
+		string SCORE_TYPE = '';
 		const int SCORES_HEADING = 40;
 		const int SCORES_TOP = 80;
 		const int SCORE_GAP = 30;
@@ -120,7 +121,6 @@ static class HighScoreController
 			LoadScores();
 
 		SwinGame.DrawText("   High Scores   ", Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_HEADING);
-
 		//For all of the scores
 		int i = 0;
 		for (i = 0; i <= _Scores.Count - 1; i++) {

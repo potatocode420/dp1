@@ -91,7 +91,6 @@ public static class GameController
 
 		AddNewState(GameState.Deploying);
 	}
-
 	/// <summary>
 	/// Stops listening to the old game once a new game is started
 	/// </summary>
