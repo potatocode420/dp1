@@ -15,6 +15,10 @@ static class HighScoreController
 	private const int NAME_WIDTH = 3;
 
 	private const int SCORES_LEFT = 490;
+	private const int HOME_BUTTON_LEFT = 50;
+	private const int HOME_BUTTON_TOP = 400;
+	private const int HOME_BUTTON_WIDTH = 200;
+	private const int HOME_BUTTON_HEIGHT = 200;
 	/// <summary>
 	/// The score structure is used to keep the name and
 	/// score of the top players together.
@@ -55,8 +59,9 @@ static class HighScoreController
 	/// </remarks>
 	private static void LoadScores(string filename)
 	{
+		string loadfile = SwinGame.PathToResource (filename);
 		StreamReader input = default(StreamReader);
-		input = new StreamReader(filename);
+		input = new StreamReader(loadfile);
 
 		//Read in the # of scores
 		int numScores = 0;
@@ -89,8 +94,9 @@ static class HighScoreController
 	/// </remarks>
 	private static void SaveScores(string filename)
 	{
+		string savefile = SwinGame.PathToResource (filename);
 		StreamWriter output = default(StreamWriter);
-		output = new StreamWriter(filename);
+		output = new StreamWriter(savefile);
 
 		output.WriteLine(_Scores.Count);
 
@@ -109,9 +115,32 @@ static class HighScoreController
 		const int SCORES_HEADING = 40;
 		const int SCORES_TOP = 80;
 		const int SCORE_GAP = 30;
+		const int SCORE_BUTTONS_LEFT = 200;
+		const int SCORE_BUTTONS_TOP = 80;
+		const int SCORE_BUTTONS_WIDTH = 200;
+		const int SCORE_BUTTONS_HEIGHT = 56;
+		const int EASY_BUTTON_TOP = 116;
+		const int MEDIUM_BUTTON_TOP = 192;
+		const int HARD_BUTTON_TOP = 278;
+		string _aiSettingScores = "easyhighscores.txt";
 
-		if (_Scores.Count == 0) {
-			LoadScores (GameController.filename);
+		SwinGame.DrawBitmap(GameResources.GameImage("ScoreButtons"), SCORE_BUTTONS_LEFT, SCORE_BUTTONS_TOP);
+		SwinGame.DrawBitmap(GameResources.GameImage("HomeButton"), HOME_BUTTON_LEFT, HOME_BUTTON_TOP);
+
+		if (SwinGame.MouseClicked (MouseButton.LeftButton)){
+			if (UtilityFunctions.IsMouseInRectangle (SCORE_BUTTONS_LEFT, EASY_BUTTON_TOP, SCORE_BUTTONS_WIDTH, SCORE_BUTTONS_HEIGHT)) {
+				_Scores.Clear ();
+				_aiSettingScores = "easyhighscores.txt";
+                LoadScores (_aiSettingScores);
+			} else if (UtilityFunctions.IsMouseInRectangle (SCORE_BUTTONS_LEFT, MEDIUM_BUTTON_TOP, SCORE_BUTTONS_WIDTH, SCORE_BUTTONS_HEIGHT)) {
+				_Scores.Clear ();
+				_aiSettingScores = "mediumhighscores.txt";
+                LoadScores (_aiSettingScores);
+			} else if (UtilityFunctions.IsMouseInRectangle (SCORE_BUTTONS_LEFT, HARD_BUTTON_TOP, SCORE_BUTTONS_WIDTH, SCORE_BUTTONS_HEIGHT)) {
+				_Scores.Clear ();
+				_aiSettingScores = "hardhighscores.txt";
+                LoadScores (_aiSettingScores);
+			} 
 		}
 
 		SwinGame.DrawText("   High Scores   ", Color.White, GameResources.GameFont("Courier"), SCORES_LEFT, SCORES_HEADING);
@@ -139,7 +168,7 @@ static class HighScoreController
 	/// <remarks></remarks>
 	public static void HandleHighScoreInput()
 	{
-		if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.vk_ESCAPE) || SwinGame.KeyTyped(KeyCode.vk_RETURN)) {
+		if ((UtilityFunctions.IsMouseInRectangle (HOME_BUTTON_LEFT, HOME_BUTTON_TOP, HOME_BUTTON_WIDTH, HOME_BUTTON_HEIGHT)) && (SwinGame.MouseClicked (MouseButton.LeftButton))) {
 			GameController.EndCurrentState();
 		}
 	}

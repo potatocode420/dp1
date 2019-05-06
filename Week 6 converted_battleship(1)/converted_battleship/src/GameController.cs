@@ -19,7 +19,7 @@ public static class GameController
 	private static Stack<GameState> _state = new Stack<GameState>();
 
 	public static AIOption _aiSetting;
-	public static string filename;
+	public static string filename = "easyhighscores.txt";
 	/// <summary>
 	/// Returns the current state of the game, indicating which screen is
 	/// currently being used
