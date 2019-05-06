@@ -51,7 +51,12 @@ public enum GameState
 	/// <summary>
 	/// The player has quit. Show ending credits and terminate the game
 	/// </summary>
-	Quitting
+	Quitting,
+
+	/// <summary>
+	/// The player is trying to view the instruction page
+	/// </summary>
+	Instructions
 }
 
 //=======================================================

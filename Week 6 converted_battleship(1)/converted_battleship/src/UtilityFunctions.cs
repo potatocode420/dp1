@@ -240,6 +240,9 @@ static class UtilityFunctions
 			case GameState.Deploying:
 				SwinGame.DrawBitmap(GameResources.GameImage("Deploy"), 0, 0);
 				break;
+			case GameState.Instructions:
+				SwinGame.DrawBitmap(GameResources.GameImage("Water"), 0, 0);
+				break;
 			default:
 				SwinGame.ClearScreen();
 				break;

@@ -290,6 +290,9 @@ public static class GameController
 			case GameState.ViewingHighScores:
 				HighScoreController.HandleHighScoreInput();
 				break;
+			case GameState.Instructions:
+				MenuController.HandleInstructions ();
+				break;
 		}
 
 		UtilityFunctions.UpdateAnimations();
@@ -327,6 +330,11 @@ public static class GameController
 			case GameState.ViewingHighScores:
 				HighScoreController.DrawHighScores();
 				break;
+			case GameState.Instructions:
+				MenuController.DrawInstructions ();
+				break;
+				
+			
 		}
 
 		UtilityFunctions.DrawAnimations();
