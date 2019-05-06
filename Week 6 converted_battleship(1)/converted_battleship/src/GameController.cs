@@ -83,7 +83,7 @@ public static class GameController
 				break;
 			default:
 				_ai = new AIEasyPlayer(_theGame);
-				filename = "highscores.txt";
+				filename = "easyhighscores.txt";
 				break;
 		}
 
