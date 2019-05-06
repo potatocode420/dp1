@@ -233,6 +233,9 @@ static class UtilityFunctions
 			case GameState.ViewingHighScores:
 				SwinGame.DrawBitmap(GameResources.GameImage("Highscore"), 0, 0);
 				break;
+			case GameState.AddingHighScores:
+				SwinGame.DrawBitmap(GameResources.GameImage("Highscore"), 0, 0);
+				break;
 			case GameState.Discovering:
 			case GameState.EndingGame:
 				SwinGame.DrawBitmap(GameResources.GameImage("Discovery"), 0, 0);

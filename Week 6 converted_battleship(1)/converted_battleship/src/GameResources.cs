@@ -30,7 +30,7 @@ public static class GameResources
 		NewImage("RandomButton", "deploy_randomize_button.png");
         NewImage ("ScoreButtons", "scorebuttons.png");
         NewImage ("HomeButton", "homebutton.png");
-
+        NewImage ("Indicator", "arrow.png");
         
 		//Discovery
         NewImage ("Reset_Button", "newResetBut.png");

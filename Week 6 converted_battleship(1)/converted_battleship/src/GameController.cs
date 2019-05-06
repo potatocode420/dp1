@@ -331,6 +331,9 @@ public static class GameController
 			case GameState.ViewingHighScores:
 				HighScoreController.DrawHighScores();
 				break;
+			case GameState.AddingHighScores:
+				HighScoreController.AddHighScore ();
+				break;
 		}
 
 		UtilityFunctions.DrawAnimations();
