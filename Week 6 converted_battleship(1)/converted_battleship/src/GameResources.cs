@@ -29,9 +29,6 @@ public static class GameResources
 		NewImage("SelectedShip", "deploy_button_hl_purple.png");
 		NewImage("PlayButton", "deploy_play_button.png");
 		NewImage("RandomButton", "deploy_randomize_button.png");
-        NewImage ("ScoreButtons", "scorebuttons.png");
-        NewImage ("HomeButton", "homebutton.png");
-        NewImage ("Indicator", "arrow.png");
         
 		//Discovery
         NewImage ("Reset_Button", "newResetBut.png");
