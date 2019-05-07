@@ -18,7 +18,8 @@ public static class GameController
 
 	private static Stack<GameState> _state = new Stack<GameState>();
 
-	private static AIOption _aiSetting;
+	public static AIOption _aiSetting;
+	public static string filename = "easyhighscores.txt";
 	/// <summary>
 	/// Returns the current state of the game, indicating which screen is
 	/// currently being used
@@ -74,12 +75,15 @@ public static class GameController
 		switch (_aiSetting) {
 			case AIOption.Medium:
 				_ai = new AIMediumPlayer(_theGame);
+				filename = "mediumhighscores.txt";
 				break;
 			case AIOption.Hard:
 				_ai = new AIHardPlayer(_theGame);
+				filename = "hardhighscores.txt";
 				break;
 			default:
 				_ai = new AIEasyPlayer(_theGame);
+				filename = "easyhighscores.txt";
 				break;
 		}
 
@@ -333,8 +337,9 @@ public static class GameController
 			case GameState.Instructions:
 				MenuController.DrawInstructions ();
 				break;
-				
-			
+			case GameState.AddingHighScores:
+				HighScoreController.AddHighScore ();
+				break;
 		}
 
 		UtilityFunctions.DrawAnimations();
