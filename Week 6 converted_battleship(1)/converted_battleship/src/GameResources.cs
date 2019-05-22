@@ -19,6 +19,7 @@ public static class GameResources
 		NewImage("Discovery", "discover.jpg");
 		NewImage("Deploy", "deploy.jpg");
 		NewImage ("Highscore", "highscore.png");
+        NewImage ("Water", "water.jpg");
 
 		//Deployment
 		NewImage("LeftRightButton", "deploy_dir_button_horiz.png");

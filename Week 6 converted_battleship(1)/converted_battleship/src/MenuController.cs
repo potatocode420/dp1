@@ -21,7 +21,8 @@ static class MenuController
 			"PLAY",
 			"SETUP",
 			"SCORES",
-			"QUIT"
+			"QUIT",
+			"GUIDE"
 		},
 		new string[] {
 			"RETURN",
@@ -50,6 +51,8 @@ static class MenuController
 	private const int MAIN_MENU_PLAY_BUTTON = 0;
 	private const int MAIN_MENU_SETUP_BUTTON = 1;
 	private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
+
+	private const int MAIN_MENU_INSTRUCTIONS_BUTTON = 4;
 
 	private const int MAIN_MENU_QUIT_BUTTON = 3;
 	private const int SETUP_MENU_EASY_BUTTON = 0;
@@ -271,6 +274,9 @@ static class MenuController
 			case MAIN_MENU_QUIT_BUTTON:
 				GameController.EndCurrentState();
 				break;
+			case MAIN_MENU_INSTRUCTIONS_BUTTON:
+				GameController.AddNewState (GameState.Instructions);
+				break;
 		}
 	}
 
@@ -316,6 +322,35 @@ static class MenuController
 				break;
 		}
 	}
+
+	/// <summary>
+	/// Draws the instructions.
+	/// </summary>
+	public static void DrawInstructions ()
+	{
+
+		SwinGame.DrawTextLines ("player_1 and player_2 are each given a game unit that contains pegs, ships, and two grids", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 230, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("an ocean grid and a target grid. The ocean grid is where ships are placed and it is on ", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 260, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("the base of the game unit. The target grid is used for marking shots that each player calls.", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 290, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("The players sit so that their game units are concealed from the other player. ", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 320, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("Each player secretly places his or her five ships on the ocean grid.", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 350, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("Place ships horizontally or vertically. Ships cannot be placed diagonally.", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 380, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("Ships cannot overlap letters, numbers, the edge of the grid or another ship.", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 410, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("Ship placement cannot be changed once the game has begun.", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 440, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("Players determine who goes first. Players alternate turns calling out one ", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 470, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("shot per turn, attempting to hit the opponent's ship. Gameplay continues ", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 500, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		SwinGame.DrawTextLines ("while either fleet > o.", Color.White, Color.Transparent, GameResources.GameFont ("Courier"), FontAlignment.AlignLeft, 20, 530, SwinGame.ScreenWidth (), SwinGame.ScreenHeight ());
+		DeploymentController.DeploySounds ();
+	}
+
+	/// <summary>
+	/// Handles the instructions.
+	/// </summary>
+	public static void HandleInstructions ()
+	{
+		if (SwinGame.MouseClicked (MouseButton.LeftButton) || SwinGame.KeyTyped (KeyCode.vk_ESCAPE) || SwinGame.KeyTyped (KeyCode.vk_RETURN)) {
+			GameController.EndCurrentState ();
+		}	}
 }
 
 //=======================================================
